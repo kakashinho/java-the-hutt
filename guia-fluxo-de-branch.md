@@ -107,7 +107,12 @@ git push origin feature/nome-da-funcionalidade
 Depois disso:
 
 Abra o repositório no GitHub
-Crie um Pull Request
+Crie um Pull Request e Compare com a Develop:
+<img width="1348" height="707" alt="image" src="https://github.com/user-attachments/assets/aa6fb355-caed-4196-b174-89530a92471d" />
+
+Edita o commit:
+<img width="1763" height="897" alt="image" src="https://github.com/user-attachments/assets/e8fc2f27-4553-4865-98e0-0d97b00e0ed7" />
+
 Aguarde a revisão da equipe
 
 # 🧪 Testando o merge localmente
