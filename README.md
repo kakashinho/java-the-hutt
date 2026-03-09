@@ -6,8 +6,6 @@ Projeto desenvolvido pela equipe Java the Hutt do 3º semestre de Desenvolviment
 <div align="center">
 
 
-
-
 [O Desafio](#o-desafio) | 
 [Backlog de Produto](#backlog-de-produto) | 
 [DoR e DoD](#dor-e-dod) | 
