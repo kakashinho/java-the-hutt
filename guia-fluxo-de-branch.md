@@ -8,23 +8,23 @@ Este guia explica como **clonar o projeto, configurar o Git Flow e desenvolver n
 - ✔ Sempre atualizar a develop antes de iniciar uma feature
 - ✔ Usar nomes claros para branches
 - ✔ Seguir padrões de commits e bem descritivos
-- ✔ Abrir Pull Request para revisão
 - ✔ Nunca desenvolver diretamente na main
-
 
 
 # 📥 Clonando o repositório
 
-Primeiro, clone o projeto para sua máquina:
+Primeiro, clone o projeto para sua máquina, que pode ser:
 
-```bash
-git clone https://github.com/fatec-api/java-the-hutt.git
-```
+- **ou** `git clone https://github.com/fatec-api/java-the-hutt.git`
+- **ou** `git clone https://github.com/fatec-api/api-3dsm-frontend.git`
+- **ou** `git clone https://github.com/fatec-api/api-3dsm-backend.git`
+
 
 Abra a pasta:
-```bash
-cd java-the-hutt
-```
+- **ou** `cd java-the-hutt`
+- **ou** `cd api-3dsm-frontend`
+- **ou** `cd api-3dsm-backend`
+
 
 # ⚙️ Inicializando o Git Flow
 O projeto utiliza Git Flow para organizar o desenvolvimento. Aceitar tudo automaticamente com -d:
@@ -105,18 +105,10 @@ git push origin feature/nome-da-funcionalidade
 ```
 
 Depois disso:
-
-Abra o repositório no GitHub
-Crie um Pull Request e Compare com a Develop:
-<img width="1348" height="707" alt="image" src="https://github.com/user-attachments/assets/aa6fb355-caed-4196-b174-89530a92471d" />
-
-Edita o commit:
-<img width="1763" height="897" alt="image" src="https://github.com/user-attachments/assets/e8fc2f27-4553-4865-98e0-0d97b00e0ed7" />
-
 Aguarde a revisão da equipe
 
 # 🧪 Testando o merge localmente
-Caso queira testar o merge antes do Pull Request:
+Caso queira testar o merge antes de finalizar a branch:
 Ir para a branch principal:
 ```bash
 git checkout main
@@ -158,8 +150,11 @@ develop (git pull origin develop)
                      │
                      └── push (git push origin feature/nome-da-funcionalidade)
                              │
-                             └── Pull Request (Acesse://github.com/fatec-api/java-the-hutt/pulls)
+                             └── testando o merge localmente (git checkout -b main-teste-funcionalidade)
                                      │
-                                     └── merge na develop (git merge develop)
+                                     └── após o review (git flow feature finish nome-da-funcionalidade)
+                                               │
+                                               └── resolva os conflitos do merge entre a fucnionalidade e a develop
+
 ```
 
